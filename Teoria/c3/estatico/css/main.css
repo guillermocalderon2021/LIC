@@ -1,0 +1,235 @@
+
+/* FUENTES */
+
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+
+*{
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+
+body{
+	margin: 0px;
+	background-color: #BBB;
+	font-size: 100%;
+	color: #444;
+}
+
+h1{
+	font-size: 1.3em;
+	text-align: center;
+	color: #464d52;
+}
+
+/* PARTE SUPERIOR */
+#superior{
+	width: 100%;
+	padding: 30px 0px;
+	background-color: #464d52;
+
+}
+
+#encabezado{
+	margin: 0px auto;
+	max-width: 960px;
+	width: 80%;
+
+}
+
+#descripcion{
+	width: 37.5%;
+	background-color: #888;
+	float: left;
+}
+
+#descripcion p{
+	margin: 20px;
+	color: white;
+	font-weight: bold;
+	line-height: 180%;
+	text-align:justify;
+}
+
+#superior #encabezado #logo{
+	width: 21%;
+}
+
+#contenido{
+	max-width: 960px;
+	width: 80%;
+	margin: 0px auto;
+	clear: left;
+
+}
+
+#superior #encabezado #logo{
+	margin: 23px 0px;
+}
+
+#superior #encabezado #imgDesc img {
+	float: left;
+
+	
+}
+
+#imgDesc{
+	overflow: hidden;/*Evita que la capa superior se haga mas chica*/
+	
+}
+
+#imgDesc img{
+	width: 62.5%;
+}
+
+/*   MENU */
+
+nav{
+	max-width: 960px;
+	font-size: 1.4em;
+
+}
+
+nav ul{
+	list-style: none;
+	margin: 0px 0px 65px 0px;
+}
+
+nav ul li{
+	float: left;
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	border-top: solid 2px white;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: .3em .5em;
+	margin: 0em .5em;
+	display: block;
+	color: white;
+	transform:scale(1);
+	transition: color 1s, transform 3s;
+}
+
+nav ul li:first-child{
+	margin-left: -45px;
+
+}
+
+nav ul li a:hover{
+	color: #AAA;
+	transform:scale(1.5);
+}
+
+nav ul li a#inicio{
+	background: url(../img/home.png) no-repeat 0px 3px;
+	padding-left: 40px;
+}
+nav ul li a#planes{
+	background: url(../img/planes.png) no-repeat 0px 3px;
+	padding-left: 40px;
+}
+
+nav ul li a#galeria{
+	background: url(../img/galeria.png) no-repeat 0px 3px;
+	padding-left: 40px;
+}
+
+
+
+
+/* PIE DE LA PAGINA*/
+footer{
+	text-align: center;
+	margin: 30px;
+	font-size: .9em;
+	clear: both;
+}
+
+
+
+/*   CONTENIDO DE LA PAGINA INDEX */
+
+.plan{
+	width: 258px;
+	padding: 20px;
+	background-color:white;
+	margin: 30px 15px;
+	border: solid 1px black;
+	border-radius: 10px;
+	float: left;
+	text-align: justify;
+	 
+}
+
+/* Div multiplos de 4 */
+#contenido div:nth-child(3n+1){
+	margin-left: 0px;
+
+}
+
+/* Div multiplos de 3 */
+#contenido div:nth-child(3n){
+	margin-right: 0px;
+	
+}
+
+.boton{
+	background-color:#464d52;
+	padding: 7px;
+	border-radius: 5px;
+	color: white;
+	font-size: .9em;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: background 1s;
+
+}
+
+.boton:hover{
+	background: #5077c7;
+
+}
+
+.boton a{
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	margin: 0px;
+	display: block;
+}
+
+/*   CONTENIDO DE LA PAGINA PLANES */
+
+.planes{
+	max-width: 900px;
+	width: 80%;
+	background: white;
+	padding: 10px 30px; 
+}
+
+.planes h1{
+text-align: left;
+font-size: 1.5em;
+}
+
+.planes .precio{
+	font-size: 1.1em;
+	margin: 20px 0px 5px;
+	padding-bottom: 15px;
+	border-bottom: solid 2px grey;
+	font-weight: bold;
+}
+
+/*   CONTENIDO DE LA PAGINA GALERIA*/
+.plan p{
+	text-align: center;
+	font-style: italic;
+}
+
+#galeria .plan{
+	font-size: 1em;
+	margin-bottom: 10px;
+	padding-bottom: 1px;
+}
